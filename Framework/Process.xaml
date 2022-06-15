@@ -5,7 +5,7 @@
     <x:Property Name="in_IsDev" Type="InArgument(x:Boolean)" />
   </x:Members>
   <sap2010:ExpressionActivityEditor.ExpressionActivityEditor>C#</sap2010:ExpressionActivityEditor.ExpressionActivityEditor>
-  <sap:VirtualizedContainerService.HintSize>834.4,1327.2</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1410.4,1327.2</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="39">
@@ -80,7 +80,6 @@
       <AssemblyReference>WindowsBase</AssemblyReference>
       <AssemblyReference>System.Configuration.Install</AssemblyReference>
       <AssemblyReference>System.Drawing</AssemblyReference>
-      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
       <AssemblyReference>PresentationFramework</AssemblyReference>
       <AssemblyReference>PresentationCore</AssemblyReference>
       <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
@@ -316,7 +315,7 @@
                                       <av:PointCollection x:Key="ConnectorLocation">100,424.84 100,454.84 260,454.84 260,478.8</av:PointCollection>
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
-                                  <Sequence DisplayName="is SAP" sap:VirtualizedContainerService.HintSize="200,68.8" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                                  <Sequence DisplayName="is SAP" sap:VirtualizedContainerService.HintSize="200,84.8" sap2010:WorkflowViewState.IdRef="Sequence_10">
                                     <sap:WorkflowViewStateService.ViewState>
                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -409,15 +408,6 @@
             <x:Reference>__ReferenceID5</x:Reference>
             <x:Reference>__ReferenceID6</x:Reference>
             <x:Reference>__ReferenceID0</x:Reference>
-            <FlowStep>
-              <sap:WorkflowViewStateService.ViewState>
-                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <av:Point x:Key="ShapeLocation">50,80</av:Point>
-                  <av:Size x:Key="ShapeSize">20,20</av:Size>
-                </scg:Dictionary>
-              </sap:WorkflowViewStateService.ViewState>
-              <r:sqSendEmail sap:VirtualizedContainerService.HintSize="{x:Null}" dtResult="{x:Null}" strMailAccount="{x:Null}" sap2010:WorkflowViewState.IdRef="sqSendEmail_2" isDevelop="[isDev]" strBody="[in_Config(&quot;MailBody&quot;).ToString]" strEmailCC="[in_Config(&quot;MailCC&quot;).ToString]" strEmailTo="[in_Config(&quot;MailTo&quot;).ToString]" strPath="[strPathProcess]" strSubject="[String.Format( in_Config(&quot;MailSubject&quot;).ToString,DateTime.Now.ToString(&quot;dd/MM/yyyy&quot;))]" />
-            </FlowStep>
           </Flowchart>
         </Sequence>
       </TryCatch.Try>
