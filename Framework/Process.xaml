@@ -1,14 +1,14 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Process" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mca="clr-namespace:Microsoft.CSharp.Activities;assembly=System.Activities" xmlns:r="clr-namespace:RPAOACLibrary;assembly=RPAOACLibrary" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:sc="clr-namespace:System.Collections;assembly=mscorlib" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:snm="clr-namespace:System.Net.Mail;assembly=System" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Process" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mca="clr-namespace:Microsoft.CSharp.Activities;assembly=System.Activities" xmlns:r="clr-namespace:RPATBVOACLibrary;assembly=RPATBVOACLibrary" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:snm="clr-namespace:System.Net.Mail;assembly=System" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property sap2010:Annotation.AnnotationText="Transaction item to be processed." Name="in_TransactionItem" Type="InArgument(ui:QueueItem)" />
     <x:Property sap2010:Annotation.AnnotationText="Dictionary structure to store configuration data of the process (settings, constants and assets)." Name="in_Config" Type="InArgument(scg:Dictionary(x:String, x:Object))" />
     <x:Property Name="in_IsDev" Type="InArgument(x:Boolean)" />
   </x:Members>
   <sap2010:ExpressionActivityEditor.ExpressionActivityEditor>C#</sap2010:ExpressionActivityEditor.ExpressionActivityEditor>
-  <sap:VirtualizedContainerService.HintSize>1410.4,1327.2</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1410.4,1026.4</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
-    <scg:List x:TypeArguments="x:String" Capacity="39">
+    <scg:List x:TypeArguments="x:String" Capacity="78">
       <x:String>System</x:String>
       <x:String>System.Collections.Generic</x:String>
       <x:String>System.Data</x:String>
@@ -48,10 +48,18 @@
       <x:String>UiPath.Mail</x:String>
       <x:String>UiPath.Mail.IMAP.Activities</x:String>
       <x:String>UiPath.Mail.Activities</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Mail.Outlook.Activities</x:String>
+      <x:String>UiPath.Mail.SMTP.Activities</x:String>
+      <x:String>Microsoft.Exchange.WebServices.Data</x:String>
+      <x:String>UiPath.Mail.Exchange.Activities</x:String>
+      <x:String>Microsoft.VisualBasic.CompilerServices</x:String>
+      <x:String>RPATBVOACLibrary</x:String>
     </scg:List>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
-    <scg:List x:TypeArguments="AssemblyReference" Capacity="40">
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="80">
       <AssemblyReference>Microsoft.CSharp</AssemblyReference>
       <AssemblyReference>System</AssemblyReference>
       <AssemblyReference>System.Activities</AssemblyReference>
@@ -91,25 +99,29 @@
       <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
       <AssemblyReference>UiPath.Mail</AssemblyReference>
       <AssemblyReference>UiPath.Mail.Activities.Design</AssemblyReference>
+      <AssemblyReference>Microsoft.Exchange.WebServices</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>RPATBVOACLibrary</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="Invoke major steps of the business process, which are usually implemented by multiple subworkflows.&#xA;&#xA;If a BusinessRuleException is thrown, the transaction is skipped. &#xA;If another kind of exception occurs, the current transaction can be retried. " DisplayName="Process" sap:VirtualizedContainerService.HintSize="753.6,1262.4" sap2010:WorkflowViewState.IdRef="Sequence_2">
+  <Sequence sap2010:Annotation.AnnotationText="Invoke major steps of the business process, which are usually implemented by multiple subworkflows.&#xA;&#xA;If a BusinessRuleException is thrown, the transaction is skipped. &#xA;If another kind of exception occurs, the current transaction can be retried. " DisplayName="Process" sap:VirtualizedContainerService.HintSize="736.8,961.6" sap2010:WorkflowViewState.IdRef="Sequence_2">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:LogMessage DisplayName="Log Message Process Start" sap:VirtualizedContainerService.HintSize="712,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info">
+    <ui:LogMessage DisplayName="Log Message Process Start" sap:VirtualizedContainerService.HintSize="695.2,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info">
       <ui:LogMessage.Message>
         <InArgument x:TypeArguments="x:Object">
           <mca:CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_1">"Started Process"</mca:CSharpValue>
         </InArgument>
       </ui:LogMessage.Message>
     </ui:LogMessage>
-    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="712,960.8" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="695.2,660" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <TryCatch.Try>
-        <Sequence DisplayName="Process" sap:VirtualizedContainerService.HintSize="675.2,729.6" sap2010:WorkflowViewState.IdRef="Sequence_4">
+        <Sequence DisplayName="Process" sap:VirtualizedContainerService.HintSize="658.4,428.8" sap2010:WorkflowViewState.IdRef="Sequence_4">
           <Sequence.Variables>
             <Variable x:TypeArguments="scg:List(snm:MailMessage)" Name="listMail" />
           </Sequence.Variables>
@@ -118,301 +130,67 @@
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <Flowchart sap:VirtualizedContainerService.HintSize="633.6,636.8" sap2010:WorkflowViewState.IdRef="Flowchart_1">
-            <sap:WorkflowViewStateService.ViewState>
-              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                <av:Point x:Key="ShapeLocation">0,12.4</av:Point>
-                <av:Size x:Key="ShapeSize">60,75.2</av:Size>
-                <av:PointCollection x:Key="ConnectorLocation">60,50 110,50</av:PointCollection>
-              </scg:Dictionary>
-            </sap:WorkflowViewStateService.ViewState>
-            <Flowchart.StartNode>
-              <x:Reference>__ReferenceID7</x:Reference>
-            </Flowchart.StartNode>
-            <FlowStep x:Name="__ReferenceID7">
-              <sap:WorkflowViewStateService.ViewState>
-                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <av:Point x:Key="ShapeLocation">110,15.6</av:Point>
-                  <av:Size x:Key="ShapeSize">200,68.8</av:Size>
-                  <av:PointCollection x:Key="ConnectorLocation">310,50 340,50</av:PointCollection>
-                </scg:Dictionary>
-              </sap:WorkflowViewStateService.ViewState>
-              <Sequence DisplayName="perpare folder" sap:VirtualizedContainerService.HintSize="200,68.8" sap2010:WorkflowViewState.IdRef="Sequence_3">
+          <If sap:VirtualizedContainerService.HintSize="616.8,273.6" sap2010:WorkflowViewState.IdRef="If_1">
+            <If.Condition>
+              <InArgument x:TypeArguments="x:Boolean">
+                <mca:CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_26">Boolean.Parse(in_Config["IsSapProcess"].ToString())</mca:CSharpValue>
+              </InArgument>
+            </If.Condition>
+            <If.Then>
+              <Sequence DisplayName="Sap process" sap:VirtualizedContainerService.HintSize="286.4,84.8" sap2010:WorkflowViewState.IdRef="Sequence_15">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="430.4,101.6" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
-                  <ui:MultipleAssign.AssignOperations>
-                    <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
-                      <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
-                        <ui:AssignOperation.To>
-                          <OutArgument x:TypeArguments="x:Object">
-                            <mca:CSharpReference x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpReference`1_1">in_Config["PathProcess"]</mca:CSharpReference>
-                          </OutArgument>
-                        </ui:AssignOperation.To>
-                        <ui:AssignOperation.Value>
-                          <InArgument x:TypeArguments="x:Object">
-                            <mca:CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_5">string.Format(in_Config["PathProcess"].ToString(),in_Config["ProcessName"].ToString(),DateTime.Now.ToString("yyyyMMddHHmmss") )</mca:CSharpValue>
-                          </InArgument>
-                        </ui:AssignOperation.Value>
-                      </ui:AssignOperation>
-                    </scg:List>
-                  </ui:MultipleAssign.AssignOperations>
-                </ui:MultipleAssign>
-                <ui:CreateDirectory ContinueOnError="{x:Null}" Output="{x:Null}" DisplayName="Create Folder" sap:VirtualizedContainerService.HintSize="430.4,80.8" sap2010:WorkflowViewState.IdRef="CreateDirectory_1">
-                  <ui:CreateDirectory.Path>
-                    <InArgument x:TypeArguments="x:String">
-                      <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_6">in_Config["PathProcess"].ToString()</mca:CSharpValue>
-                    </InArgument>
-                  </ui:CreateDirectory.Path>
-                </ui:CreateDirectory>
               </Sequence>
-              <FlowStep.Next>
-                <FlowStep x:Name="__ReferenceID1">
-                  <sap:WorkflowViewStateService.ViewState>
-                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <av:Point x:Key="ShapeLocation">340,38.8</av:Point>
-                      <av:Size x:Key="ShapeSize">200,22.4</av:Size>
-                      <av:PointCollection x:Key="ConnectorLocation">440,61.2 440,126.4</av:PointCollection>
-                    </scg:Dictionary>
-                  </sap:WorkflowViewStateService.ViewState>
-                  <r:sqReadEmail sap:VirtualizedContainerService.HintSize="200,22.4" sap2010:WorkflowViewState.IdRef="sqReadEmail_1" rtnGetTop="10">
-                    <sap:WorkflowViewStateService.ViewState>
-                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                      </scg:Dictionary>
-                    </sap:WorkflowViewStateService.ViewState>
-                    <r:sqReadEmail.rtnMailFolder>
-                      <InArgument x:TypeArguments="x:String">
-                        <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_9">in_Config["MailFolderInbox"].ToString()</mca:CSharpValue>
-                      </InArgument>
-                    </r:sqReadEmail.rtnMailFolder>
-                    <r:sqReadEmail.rtnMailLists>
-                      <OutArgument x:TypeArguments="scg:List(snm:MailMessage)">
-                        <mca:CSharpReference x:TypeArguments="scg:List(snm:MailMessage)" sap2010:WorkflowViewState.IdRef="CSharpReference`1_2">listMail</mca:CSharpReference>
-                      </OutArgument>
-                    </r:sqReadEmail.rtnMailLists>
-                    <r:sqReadEmail.rtnMailPassword>
-                      <InArgument x:TypeArguments="x:String">
-                        <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_8">in_Config["thaibevRPAMailPassword"].ToString()</mca:CSharpValue>
-                      </InArgument>
-                    </r:sqReadEmail.rtnMailPassword>
-                    <r:sqReadEmail.rtnMailUserName>
-                      <InArgument x:TypeArguments="x:String">
-                        <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_7">in_Config["thaibevRPAMailUserName"].ToString()</mca:CSharpValue>
-                      </InArgument>
-                    </r:sqReadEmail.rtnMailUserName>
-                  </r:sqReadEmail>
-                  <FlowStep.Next>
-                    <FlowDecision x:Name="__ReferenceID2" DisplayName="Flow Decision" sap:VirtualizedContainerService.HintSize="79.2,87.2" sap2010:WorkflowViewState.IdRef="FlowDecision_1">
-                      <FlowDecision.Condition>
-                        <mca:CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_11">listMail.Count &gt; 0</mca:CSharpValue>
-                      </FlowDecision.Condition>
-                      <sap:WorkflowViewStateService.ViewState>
-                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                          <av:Point x:Key="ShapeLocation">400.4,126.4</av:Point>
-                          <av:Size x:Key="ShapeSize">79.2,87.2</av:Size>
-                          <av:PointCollection x:Key="TrueConnector">400.4,170 370.4,170 370.4,170.44 310.4,170.44</av:PointCollection>
-                        </scg:Dictionary>
-                      </sap:WorkflowViewStateService.ViewState>
-                      <FlowDecision.True>
-                        <FlowStep x:Name="__ReferenceID3">
-                          <sap:WorkflowViewStateService.ViewState>
-                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                              <av:Point x:Key="ShapeLocation">110.4,136.04</av:Point>
-                              <av:Size x:Key="ShapeSize">200,68.8</av:Size>
-                              <av:PointCollection x:Key="ConnectorLocation">210.4,204.84 210.4,234.84 260,234.84 260,246.4</av:PointCollection>
-                            </scg:Dictionary>
-                          </sap:WorkflowViewStateService.ViewState>
-                          <Sequence DisplayName="save attach files" sap:VirtualizedContainerService.HintSize="200,68.8" sap2010:WorkflowViewState.IdRef="Sequence_7">
-                            <sap:WorkflowViewStateService.ViewState>
-                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                              </scg:Dictionary>
-                            </sap:WorkflowViewStateService.ViewState>
-                            <ui:ForEach x:TypeArguments="snm:MailMessage" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="433.6,433.6" sap2010:WorkflowViewState.IdRef="ForEach`1_1">
-                              <ui:ForEach.Body>
-                                <ActivityAction x:TypeArguments="snm:MailMessage">
-                                  <ActivityAction.Argument>
-                                    <DelegateInArgument x:TypeArguments="snm:MailMessage" Name="item" />
-                                  </ActivityAction.Argument>
-                                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="375.2,308.8" sap2010:WorkflowViewState.IdRef="Sequence_8">
-                                    <sap:WorkflowViewStateService.ViewState>
-                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                      </scg:Dictionary>
-                                    </sap:WorkflowViewStateService.ViewState>
-                                    <ui:SaveMailAttachments Attachments="{x:Null}" DisplayName="Save Attachments" sap:VirtualizedContainerService.HintSize="333.6,88" sap2010:WorkflowViewState.IdRef="SaveMailAttachments_1" OverwriteExisting="False">
-                                      <ui:SaveMailAttachments.FolderPath>
-                                        <InArgument x:TypeArguments="x:String">
-                                          <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_13">in_Config["PathProcess"].ToString()</mca:CSharpValue>
-                                        </InArgument>
-                                      </ui:SaveMailAttachments.FolderPath>
-                                      <ui:SaveMailAttachments.Message>
-                                        <InArgument x:TypeArguments="snm:MailMessage">
-                                          <mca:CSharpValue x:TypeArguments="snm:MailMessage" sap2010:WorkflowViewState.IdRef="CSharpValue`1_14">item</mca:CSharpValue>
-                                        </InArgument>
-                                      </ui:SaveMailAttachments.Message>
-                                    </ui:SaveMailAttachments>
-                                    <ui:MoveIMAPMailMessageToFolder FromFolder="{x:Null}" SecurePassword="{x:Null}" DisplayName="Move IMAP Mail Message" EnableSSL="True" sap:VirtualizedContainerService.HintSize="333.6,88" sap2010:WorkflowViewState.IdRef="MoveIMAPMailMessageToFolder_1" Port="993" SecureConnection="Auto" Server="outlook.office365.com">
-                                      <ui:MoveIMAPMailMessageToFolder.Email>
-                                        <InArgument x:TypeArguments="x:String">
-                                          <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_15">in_Config["thaibevRPAMailUserName"].ToString()</mca:CSharpValue>
-                                        </InArgument>
-                                      </ui:MoveIMAPMailMessageToFolder.Email>
-                                      <ui:MoveIMAPMailMessageToFolder.MailFolder>
-                                        <InArgument x:TypeArguments="x:String">
-                                          <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_18">in_Config["MailFolderMoveTo"].ToString()</mca:CSharpValue>
-                                        </InArgument>
-                                      </ui:MoveIMAPMailMessageToFolder.MailFolder>
-                                      <ui:MoveIMAPMailMessageToFolder.MailMessage>
-                                        <InArgument x:TypeArguments="snm:MailMessage">
-                                          <mca:CSharpValue x:TypeArguments="snm:MailMessage" sap2010:WorkflowViewState.IdRef="CSharpValue`1_17">item</mca:CSharpValue>
-                                        </InArgument>
-                                      </ui:MoveIMAPMailMessageToFolder.MailMessage>
-                                      <ui:MoveIMAPMailMessageToFolder.Password>
-                                        <InArgument x:TypeArguments="x:String">
-                                          <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_16">in_Config["thaibevRPAMailPassword"].ToString()</mca:CSharpValue>
-                                        </InArgument>
-                                      </ui:MoveIMAPMailMessageToFolder.Password>
-                                    </ui:MoveIMAPMailMessageToFolder>
-                                  </Sequence>
-                                </ActivityAction>
-                              </ui:ForEach.Body>
-                              <ui:ForEach.Values>
-                                <InArgument x:TypeArguments="sc:IEnumerable">
-                                  <mca:CSharpValue x:TypeArguments="sc:IEnumerable" sap2010:WorkflowViewState.IdRef="CSharpValue`1_12">listMail</mca:CSharpValue>
-                                </InArgument>
-                              </ui:ForEach.Values>
-                            </ui:ForEach>
-                          </Sequence>
-                          <FlowStep.Next>
-                            <FlowDecision x:Name="__ReferenceID4" DisplayName="isSapProcess" sap:VirtualizedContainerService.HintSize="72.8,87.2" sap2010:WorkflowViewState.IdRef="FlowDecision_2">
-                              <FlowDecision.Condition>
-                                <mca:CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_19">Boolean.Parse(in_Config["IsSapProcess"].ToString())</mca:CSharpValue>
-                              </FlowDecision.Condition>
-                              <sap:WorkflowViewStateService.ViewState>
-                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                  <av:Point x:Key="ShapeLocation">223.6,246.4</av:Point>
-                                  <av:Size x:Key="ShapeSize">72.8,87.2</av:Size>
-                                  <av:PointCollection x:Key="FalseConnector">296.4,290 416.4,290 416.4,356.04</av:PointCollection>
-                                  <av:PointCollection x:Key="TrueConnector">223.6,290 100,290 100,356.04</av:PointCollection>
-                                </scg:Dictionary>
-                              </sap:WorkflowViewStateService.ViewState>
-                              <FlowDecision.True>
-                                <FlowStep x:Name="__ReferenceID6">
-                                  <sap:WorkflowViewStateService.ViewState>
-                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                      <av:Point x:Key="ShapeLocation">0,356.04</av:Point>
-                                      <av:Size x:Key="ShapeSize">200,68.8</av:Size>
-                                      <av:PointCollection x:Key="ConnectorLocation">100,424.84 100,454.84 260,454.84 260,478.8</av:PointCollection>
-                                    </scg:Dictionary>
-                                  </sap:WorkflowViewStateService.ViewState>
-                                  <Sequence DisplayName="is SAP" sap:VirtualizedContainerService.HintSize="200,84.8" sap2010:WorkflowViewState.IdRef="Sequence_10">
-                                    <sap:WorkflowViewStateService.ViewState>
-                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                      </scg:Dictionary>
-                                    </sap:WorkflowViewStateService.ViewState>
-                                  </Sequence>
-                                  <FlowStep.Next>
-                                    <FlowStep x:Name="__ReferenceID0">
-                                      <sap:WorkflowViewStateService.ViewState>
-                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                          <av:Point x:Key="ShapeLocation">160,478.8</av:Point>
-                                          <av:Size x:Key="ShapeSize">200,22.4</av:Size>
-                                        </scg:Dictionary>
-                                      </sap:WorkflowViewStateService.ViewState>
-                                      <r:sqSendEmail dtResult="{x:Null}" strMailAccount="{x:Null}" sap:VirtualizedContainerService.HintSize="200,22.4" sap2010:WorkflowViewState.IdRef="sqSendEmail_1">
-                                        <sap:WorkflowViewStateService.ViewState>
-                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                          </scg:Dictionary>
-                                        </sap:WorkflowViewStateService.ViewState>
-                                        <r:sqSendEmail.isDevelop>
-                                          <InArgument x:TypeArguments="x:Boolean">
-                                            <mca:CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_21">in_IsDev</mca:CSharpValue>
-                                          </InArgument>
-                                        </r:sqSendEmail.isDevelop>
-                                        <r:sqSendEmail.strBody>
-                                          <InArgument x:TypeArguments="x:String">
-                                            <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_25">in_Config["MailBody"].ToString()</mca:CSharpValue>
-                                          </InArgument>
-                                        </r:sqSendEmail.strBody>
-                                        <r:sqSendEmail.strEmailCC>
-                                          <InArgument x:TypeArguments="x:String">
-                                            <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_20">in_Config["MailCC"].ToString()</mca:CSharpValue>
-                                          </InArgument>
-                                        </r:sqSendEmail.strEmailCC>
-                                        <r:sqSendEmail.strEmailTo>
-                                          <InArgument x:TypeArguments="x:String">
-                                            <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_23">in_Config["MailTo"].ToString()</mca:CSharpValue>
-                                          </InArgument>
-                                        </r:sqSendEmail.strEmailTo>
-                                        <r:sqSendEmail.strPath>
-                                          <InArgument x:TypeArguments="x:String">
-                                            <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_22">in_Config["PathProcess"].ToString()</mca:CSharpValue>
-                                          </InArgument>
-                                        </r:sqSendEmail.strPath>
-                                        <r:sqSendEmail.strSubject>
-                                          <InArgument x:TypeArguments="x:String">
-                                            <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_24">String.Format( in_Config["MailSubject"].ToString(),DateTime.Now.ToString("dd/MM/yyyy"))</mca:CSharpValue>
-                                          </InArgument>
-                                        </r:sqSendEmail.strSubject>
-                                      </r:sqSendEmail>
-                                    </FlowStep>
-                                  </FlowStep.Next>
-                                </FlowStep>
-                              </FlowDecision.True>
-                              <FlowDecision.False>
-                                <FlowStep x:Name="__ReferenceID5">
-                                  <sap:WorkflowViewStateService.ViewState>
-                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                      <av:Point x:Key="ShapeLocation">316.4,356.04</av:Point>
-                                      <av:Size x:Key="ShapeSize">200,68.8</av:Size>
-                                      <av:PointCollection x:Key="ConnectorLocation">416.4,424.84 416.4,454.84 260,454.84 260,478.8</av:PointCollection>
-                                    </scg:Dictionary>
-                                  </sap:WorkflowViewStateService.ViewState>
-                                  <Sequence DisplayName="Non SAP" sap:VirtualizedContainerService.HintSize="200,68.8" sap2010:WorkflowViewState.IdRef="Sequence_9">
-                                    <sap:WorkflowViewStateService.ViewState>
-                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                      </scg:Dictionary>
-                                    </sap:WorkflowViewStateService.ViewState>
-                                  </Sequence>
-                                  <FlowStep.Next>
-                                    <x:Reference>__ReferenceID0</x:Reference>
-                                  </FlowStep.Next>
-                                </FlowStep>
-                              </FlowDecision.False>
-                            </FlowDecision>
-                          </FlowStep.Next>
-                        </FlowStep>
-                      </FlowDecision.True>
-                    </FlowDecision>
-                  </FlowStep.Next>
-                </FlowStep>
-              </FlowStep.Next>
-            </FlowStep>
-            <x:Reference>__ReferenceID1</x:Reference>
-            <x:Reference>__ReferenceID2</x:Reference>
-            <x:Reference>__ReferenceID3</x:Reference>
-            <x:Reference>__ReferenceID4</x:Reference>
-            <x:Reference>__ReferenceID5</x:Reference>
-            <x:Reference>__ReferenceID6</x:Reference>
-            <x:Reference>__ReferenceID0</x:Reference>
-          </Flowchart>
+            </If.Then>
+            <If.Else>
+              <Sequence DisplayName="non sap process" sap:VirtualizedContainerService.HintSize="286.4,84.8" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </Sequence>
+            </If.Else>
+          </If>
+          <r:sqSendEmail dtResult="{x:Null}" sap:VirtualizedContainerService.HintSize="616.8,22.4" sap2010:WorkflowViewState.IdRef="sqSendEmail_1" strMailAccount="OAC">
+            <r:sqSendEmail.isDevelop>
+              <InArgument x:TypeArguments="x:Boolean">
+                <mca:CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_31">in_IsDev</mca:CSharpValue>
+              </InArgument>
+            </r:sqSendEmail.isDevelop>
+            <r:sqSendEmail.strBody>
+              <InArgument x:TypeArguments="x:String">
+                <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_35">in_Config["MailBody"].ToString()</mca:CSharpValue>
+              </InArgument>
+            </r:sqSendEmail.strBody>
+            <r:sqSendEmail.strEmailCC>
+              <InArgument x:TypeArguments="x:String">
+                <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_30">in_Config["MailCC"].ToString()</mca:CSharpValue>
+              </InArgument>
+            </r:sqSendEmail.strEmailCC>
+            <r:sqSendEmail.strEmailTo>
+              <InArgument x:TypeArguments="x:String">
+                <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_33">in_Config["MailTo"].ToString()</mca:CSharpValue>
+              </InArgument>
+            </r:sqSendEmail.strEmailTo>
+            <r:sqSendEmail.strPath>
+              <InArgument x:TypeArguments="x:String">
+                <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_32">in_Config["PathProcess"].ToString()</mca:CSharpValue>
+              </InArgument>
+            </r:sqSendEmail.strPath>
+            <r:sqSendEmail.strSubject>
+              <InArgument x:TypeArguments="x:String">
+                <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_34">in_Config["MailSubject"].ToString()</mca:CSharpValue>
+              </InArgument>
+            </r:sqSendEmail.strSubject>
+          </r:sqSendEmail>
         </Sequence>
       </TryCatch.Try>
       <TryCatch.Catches>
-        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="678.4,22.4" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="661.6,22.4" sap2010:WorkflowViewState.IdRef="Catch`1_1">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -423,20 +201,20 @@
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
             </ActivityAction.Argument>
-            <r:sqManageException sap:VirtualizedContainerService.HintSize="200,22.4" sap2010:WorkflowViewState.IdRef="sqManageException_1">
-              <r:sqManageException.rtnExceptionMessage>
-                <InArgument x:TypeArguments="x:String">
-                  <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_3">exception.Message</mca:CSharpValue>
+            <r:sqManageException sap:VirtualizedContainerService.HintSize="200,22.4" sap2010:WorkflowViewState.IdRef="sqManageException_1" rtnMailAccount="OAC">
+              <r:sqManageException.rtnException>
+                <InArgument x:TypeArguments="s:Exception">
+                  <mca:CSharpValue x:TypeArguments="s:Exception" sap2010:WorkflowViewState.IdRef="CSharpValue`1_29">exception</mca:CSharpValue>
                 </InArgument>
-              </r:sqManageException.rtnExceptionMessage>
+              </r:sqManageException.rtnException>
               <r:sqManageException.rtnMailTo>
                 <InArgument x:TypeArguments="x:String">
-                  <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_4">in_Config["MailException"].ToString()</mca:CSharpValue>
+                  <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_28">in_Config["MailException"].ToString()</mca:CSharpValue>
                 </InArgument>
               </r:sqManageException.rtnMailTo>
               <r:sqManageException.rtnProjectName>
                 <InArgument x:TypeArguments="x:String">
-                  <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_2">in_Config["ProcessName"].ToString()</mca:CSharpValue>
+                  <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_27">in_Config["ProcessName"].ToString()</mca:CSharpValue>
                 </InArgument>
               </r:sqManageException.rtnProjectName>
             </r:sqManageException>

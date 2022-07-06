@@ -3,7 +3,7 @@
   "description": "RPAOACTemplate",
   "main": "Main.xaml",
   "dependencies": {
-    "RPAOACLibrary": "[1.0.31]",
+    "RPATBVOACLibrary": "[1.0.44]",
     "UiPath.Excel.Activities": "[2.12.3]",
     "UiPath.System.Activities": "[22.4.1]",
     "UiPath.Testing.Activities": "[22.4.3]",
