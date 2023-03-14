@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "ccQrHO+sQEt4K/N0qgMROU3RCRPf3p+l/3JnMH9Slm8NeaAaXhNlWaLgSVHGFgtub7CECECby0LZHUd5+8W6yg==",
+  "dgSpecHash": "Y8/omj/RnifziCwnCbLH2JPODZPzfENBitryuibiuvMOeYgMEaNiZthmSPN6pSzlvo11hvg0eeyc7PZAKmiq5A==",
   "success": true,
   "projectFilePath": "D:\\Thaibev\\RPAOACTemplate\\.local\\",
   "expectedPackageFiles": [
@@ -99,7 +99,7 @@
     "C:\\Users\\11035585\\.nuget\\packages\\npoi\\2.5.5\\npoi.2.5.5.nupkg.sha512",
     "C:\\Users\\11035585\\.nuget\\packages\\polly\\7.1.0\\polly.7.1.0.nupkg.sha512",
     "C:\\Users\\11035585\\.nuget\\packages\\portable.bouncycastle\\1.9.0\\portable.bouncycastle.1.9.0.nupkg.sha512",
-    "C:\\Users\\11035585\\.nuget\\packages\\rpaoaclibraryforwindows\\1.0.6\\rpaoaclibraryforwindows.1.0.6.nupkg.sha512",
+    "C:\\Users\\11035585\\.nuget\\packages\\rpaoaclibraryforwindows\\1.0.9\\rpaoaclibraryforwindows.1.0.9.nupkg.sha512",
     "C:\\Users\\11035585\\.nuget\\packages\\runtime.any.system.collections\\4.3.0\\runtime.any.system.collections.4.3.0.nupkg.sha512",
     "C:\\Users\\11035585\\.nuget\\packages\\runtime.any.system.diagnostics.tools\\4.3.0\\runtime.any.system.diagnostics.tools.4.3.0.nupkg.sha512",
     "C:\\Users\\11035585\\.nuget\\packages\\runtime.any.system.diagnostics.tracing\\4.3.0\\runtime.any.system.diagnostics.tracing.4.3.0.nupkg.sha512",

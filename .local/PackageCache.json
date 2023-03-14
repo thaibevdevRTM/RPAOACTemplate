@@ -157,11 +157,11 @@
         "C:\\Users\\11035585\\.nuget\\packages\\uipath.uiautomation.activities\\22.4.7\\lib/net5.0-windows7.0/UiPath.CV.Activities.dll",
         "C:\\Users\\11035585\\.nuget\\packages\\uipath.uiautomation.activities\\22.4.7\\lib/net5.0-windows7.0/UiPath.CV.dll",
         "C:\\Users\\11035585\\.nuget\\packages\\uipath.uiautomation.activities\\22.4.7\\lib/net5.0-windows7.0/UiPath.UIAutomation.Activities.Design.dll",
-        "C:\\Users\\11035585\\.nuget\\packages\\uipath.uiautomation.activities\\22.4.7\\lib/net5.0-windows7.0/UiPath.UiAutomation.Activities.dll",
         "C:\\Users\\11035585\\.nuget\\packages\\uipath.uiautomation.activities\\22.4.7\\lib/net5.0-windows7.0/UiPath.UIAutomationCore.dll",
         "C:\\Users\\11035585\\.nuget\\packages\\uipath.uiautomation.activities\\22.4.7\\lib/net5.0-windows7.0/UiPath.UIAutomationNext.Activities.Design.dll",
         "C:\\Users\\11035585\\.nuget\\packages\\uipath.uiautomation.activities\\22.4.7\\lib/net5.0-windows7.0/UiPath.UIAutomationNext.Activities.dll",
         "C:\\Users\\11035585\\.nuget\\packages\\uipath.uiautomation.activities\\22.4.7\\lib/net5.0-windows7.0/UiPath.UIAutomationNext.dll",
+        "C:\\Users\\11035585\\.nuget\\packages\\uipath.uiautomation.activities\\22.4.7\\lib/net5.0-windows7.0/UiPath.UiAutomation.Activities.dll",
         "C:\\Users\\11035585\\.nuget\\packages\\uipath.uiautomation.activities\\22.4.7\\lib/net5.0-windows7.0/UiPath.Wizards.dll",
         "C:\\Users\\11035585\\.nuget\\packages\\uipath.vision\\3.3.0\\lib/net5.0-windows7.0/UiPath.Vision.AzureComputerVision.dll",
         "C:\\Users\\11035585\\.nuget\\packages\\uipath.vision\\3.3.0\\lib/net5.0-windows7.0/UiPath.Vision.Core.dll",
@@ -174,7 +174,7 @@
     {
       "Package": {
         "Id": "RPAOACLibraryForWindows",
-        "Version": "1.0.6"
+        "Version": "1.0.9"
       },
       "Assemblies": [
         "C:\\Users\\11035585\\.nuget\\packages\\azure.core\\1.18.0\\lib/net5.0/Azure.Core.dll",
@@ -255,19 +255,19 @@
         "C:\\Users\\11035585\\.nuget\\packages\\nlog\\4.5.11\\lib/netstandard2.0/NLog.dll",
         "C:\\Users\\11035585\\.nuget\\packages\\polly\\7.1.0\\lib/netstandard2.0/Polly.dll",
         "C:\\Users\\11035585\\.nuget\\packages\\portable.bouncycastle\\1.9.0\\lib/netstandard2.0/BouncyCastle.Crypto.dll",
-        "C:\\Users\\11035585\\.nuget\\packages\\rpaoaclibraryforwindows\\1.0.6\\lib/net6.0-windows7.0/RPAOACLibraryForWindows.dll",
-        "C:\\Users\\11035585\\.nuget\\packages\\rpaoaclibraryforwindows\\1.0.6\\lib/net6.0-windows7.0/RPAOACLibraryForWindows_Expressions_15214492.dll",
-        "C:\\Users\\11035585\\.nuget\\packages\\rpaoaclibraryforwindows\\1.0.6\\lib/net6.0-windows7.0/RPAOACLibraryForWindows_Expressions_1840994.dll",
-        "C:\\Users\\11035585\\.nuget\\packages\\rpaoaclibraryforwindows\\1.0.6\\lib/net6.0-windows7.0/RPAOACLibraryForWindows_Expressions_24983361.dll",
-        "C:\\Users\\11035585\\.nuget\\packages\\rpaoaclibraryforwindows\\1.0.6\\lib/net6.0-windows7.0/RPAOACLibraryForWindows_Expressions_26584254.dll",
-        "C:\\Users\\11035585\\.nuget\\packages\\rpaoaclibraryforwindows\\1.0.6\\lib/net6.0-windows7.0/RPAOACLibraryForWindows_Expressions_34719933.dll",
-        "C:\\Users\\11035585\\.nuget\\packages\\rpaoaclibraryforwindows\\1.0.6\\lib/net6.0-windows7.0/RPAOACLibraryForWindows_Expressions_36031992.dll",
-        "C:\\Users\\11035585\\.nuget\\packages\\rpaoaclibraryforwindows\\1.0.6\\lib/net6.0-windows7.0/RPAOACLibraryForWindows_Expressions_40600128.dll",
-        "C:\\Users\\11035585\\.nuget\\packages\\rpaoaclibraryforwindows\\1.0.6\\lib/net6.0-windows7.0/RPAOACLibraryForWindows_Expressions_45407610.dll",
-        "C:\\Users\\11035585\\.nuget\\packages\\rpaoaclibraryforwindows\\1.0.6\\lib/net6.0-windows7.0/RPAOACLibraryForWindows_Expressions_48077747.dll",
-        "C:\\Users\\11035585\\.nuget\\packages\\rpaoaclibraryforwindows\\1.0.6\\lib/net6.0-windows7.0/RPAOACLibraryForWindows_Expressions_57865663.dll",
-        "C:\\Users\\11035585\\.nuget\\packages\\rpaoaclibraryforwindows\\1.0.6\\lib/net6.0-windows7.0/RPAOACLibraryForWindows_Expressions_63658373.dll",
-        "C:\\Users\\11035585\\.nuget\\packages\\rpaoaclibraryforwindows\\1.0.6\\lib/net6.0-windows7.0/RPAOACLibraryForWindows_Expressions_67051234.dll",
+        "C:\\Users\\11035585\\.nuget\\packages\\rpaoaclibraryforwindows\\1.0.9\\lib/net6.0-windows7.0/RPAOACLibraryForWindows.dll",
+        "C:\\Users\\11035585\\.nuget\\packages\\rpaoaclibraryforwindows\\1.0.9\\lib/net6.0-windows7.0/RPAOACLibraryForWindows_Expressions_10282806.dll",
+        "C:\\Users\\11035585\\.nuget\\packages\\rpaoaclibraryforwindows\\1.0.9\\lib/net6.0-windows7.0/RPAOACLibraryForWindows_Expressions_10849636.dll",
+        "C:\\Users\\11035585\\.nuget\\packages\\rpaoaclibraryforwindows\\1.0.9\\lib/net6.0-windows7.0/RPAOACLibraryForWindows_Expressions_15586314.dll",
+        "C:\\Users\\11035585\\.nuget\\packages\\rpaoaclibraryforwindows\\1.0.9\\lib/net6.0-windows7.0/RPAOACLibraryForWindows_Expressions_19284071.dll",
+        "C:\\Users\\11035585\\.nuget\\packages\\rpaoaclibraryforwindows\\1.0.9\\lib/net6.0-windows7.0/RPAOACLibraryForWindows_Expressions_20393304.dll",
+        "C:\\Users\\11035585\\.nuget\\packages\\rpaoaclibraryforwindows\\1.0.9\\lib/net6.0-windows7.0/RPAOACLibraryForWindows_Expressions_41325099.dll",
+        "C:\\Users\\11035585\\.nuget\\packages\\rpaoaclibraryforwindows\\1.0.9\\lib/net6.0-windows7.0/RPAOACLibraryForWindows_Expressions_48388231.dll",
+        "C:\\Users\\11035585\\.nuget\\packages\\rpaoaclibraryforwindows\\1.0.9\\lib/net6.0-windows7.0/RPAOACLibraryForWindows_Expressions_50424817.dll",
+        "C:\\Users\\11035585\\.nuget\\packages\\rpaoaclibraryforwindows\\1.0.9\\lib/net6.0-windows7.0/RPAOACLibraryForWindows_Expressions_52302524.dll",
+        "C:\\Users\\11035585\\.nuget\\packages\\rpaoaclibraryforwindows\\1.0.9\\lib/net6.0-windows7.0/RPAOACLibraryForWindows_Expressions_5323804.dll",
+        "C:\\Users\\11035585\\.nuget\\packages\\rpaoaclibraryforwindows\\1.0.9\\lib/net6.0-windows7.0/RPAOACLibraryForWindows_Expressions_61687102.dll",
+        "C:\\Users\\11035585\\.nuget\\packages\\rpaoaclibraryforwindows\\1.0.9\\lib/net6.0-windows7.0/RPAOACLibraryForWindows_Expressions_6554751.dll",
         "C:\\Users\\11035585\\.nuget\\packages\\sharpziplib\\1.3.3\\lib/netstandard2.1/ICSharpCode.SharpZipLib.dll",
         "C:\\Users\\11035585\\.nuget\\packages\\system.componentmodel.composition\\5.0.0\\lib/netcoreapp2.0/System.ComponentModel.Composition.dll",
         "C:\\Users\\11035585\\.nuget\\packages\\system.componentmodel.composition.registration\\5.0.0\\lib/netstandard2.1/System.ComponentModel.Composition.Registration.dll",
@@ -326,11 +326,11 @@
         "C:\\Users\\11035585\\.nuget\\packages\\uipath.uiautomation.activities\\22.4.7\\lib/net5.0-windows7.0/UiPath.CV.Activities.dll",
         "C:\\Users\\11035585\\.nuget\\packages\\uipath.uiautomation.activities\\22.4.7\\lib/net5.0-windows7.0/UiPath.CV.dll",
         "C:\\Users\\11035585\\.nuget\\packages\\uipath.uiautomation.activities\\22.4.7\\lib/net5.0-windows7.0/UiPath.UIAutomation.Activities.Design.dll",
-        "C:\\Users\\11035585\\.nuget\\packages\\uipath.uiautomation.activities\\22.4.7\\lib/net5.0-windows7.0/UiPath.UiAutomation.Activities.dll",
         "C:\\Users\\11035585\\.nuget\\packages\\uipath.uiautomation.activities\\22.4.7\\lib/net5.0-windows7.0/UiPath.UIAutomationCore.dll",
         "C:\\Users\\11035585\\.nuget\\packages\\uipath.uiautomation.activities\\22.4.7\\lib/net5.0-windows7.0/UiPath.UIAutomationNext.Activities.Design.dll",
         "C:\\Users\\11035585\\.nuget\\packages\\uipath.uiautomation.activities\\22.4.7\\lib/net5.0-windows7.0/UiPath.UIAutomationNext.Activities.dll",
         "C:\\Users\\11035585\\.nuget\\packages\\uipath.uiautomation.activities\\22.4.7\\lib/net5.0-windows7.0/UiPath.UIAutomationNext.dll",
+        "C:\\Users\\11035585\\.nuget\\packages\\uipath.uiautomation.activities\\22.4.7\\lib/net5.0-windows7.0/UiPath.UiAutomation.Activities.dll",
         "C:\\Users\\11035585\\.nuget\\packages\\uipath.uiautomation.activities\\22.4.7\\lib/net5.0-windows7.0/UiPath.Wizards.dll",
         "C:\\Users\\11035585\\.nuget\\packages\\uipath.vision\\3.3.0\\lib/net5.0-windows7.0/UiPath.Vision.AzureComputerVision.dll",
         "C:\\Users\\11035585\\.nuget\\packages\\uipath.vision\\3.3.0\\lib/net5.0-windows7.0/UiPath.Vision.Core.dll",
@@ -338,7 +338,7 @@
         "C:\\Users\\11035585\\.nuget\\packages\\uipath.vision\\3.3.0\\lib/net5.0-windows7.0/UiPath.Vision.Tesseract.dll",
         "C:\\Users\\11035585\\.nuget\\packages\\uipath.vision\\3.3.0\\lib/net5.0-windows7.0/UiPath.Vision.dll"
       ],
-      "Path": "C:\\Users\\11035585\\.nuget\\packages\\rpaoaclibraryforwindows\\1.0.6"
+      "Path": "C:\\Users\\11035585\\.nuget\\packages\\rpaoaclibraryforwindows\\1.0.9"
     }
   ],
   "Conflicts": [],
@@ -1885,7 +1885,7 @@
     },
     "RPAOACLibraryForWindows": {
       "Id": "RPAOACLibraryForWindows",
-      "Version": "1.0.6",
+      "Version": "1.0.9",
       "Dependencies": [
         {
           "Item1": "UiPath.Mail.Activities",
@@ -5793,24 +5793,24 @@
     {
       "Package": {
         "Id": "RPAOACLibraryForWindows",
-        "Version": "1.0.6"
+        "Version": "1.0.9"
       },
       "Assemblies": [
-        "C:\\Users\\11035585\\.nuget\\packages\\rpaoaclibraryforwindows\\1.0.6\\lib\\net6.0-windows7.0\\RPAOACLibraryForWindows.dll",
-        "C:\\Users\\11035585\\.nuget\\packages\\rpaoaclibraryforwindows\\1.0.6\\lib\\net6.0-windows7.0\\RPAOACLibraryForWindows_Expressions_15214492.dll",
-        "C:\\Users\\11035585\\.nuget\\packages\\rpaoaclibraryforwindows\\1.0.6\\lib\\net6.0-windows7.0\\RPAOACLibraryForWindows_Expressions_1840994.dll",
-        "C:\\Users\\11035585\\.nuget\\packages\\rpaoaclibraryforwindows\\1.0.6\\lib\\net6.0-windows7.0\\RPAOACLibraryForWindows_Expressions_24983361.dll",
-        "C:\\Users\\11035585\\.nuget\\packages\\rpaoaclibraryforwindows\\1.0.6\\lib\\net6.0-windows7.0\\RPAOACLibraryForWindows_Expressions_26584254.dll",
-        "C:\\Users\\11035585\\.nuget\\packages\\rpaoaclibraryforwindows\\1.0.6\\lib\\net6.0-windows7.0\\RPAOACLibraryForWindows_Expressions_34719933.dll",
-        "C:\\Users\\11035585\\.nuget\\packages\\rpaoaclibraryforwindows\\1.0.6\\lib\\net6.0-windows7.0\\RPAOACLibraryForWindows_Expressions_36031992.dll",
-        "C:\\Users\\11035585\\.nuget\\packages\\rpaoaclibraryforwindows\\1.0.6\\lib\\net6.0-windows7.0\\RPAOACLibraryForWindows_Expressions_40600128.dll",
-        "C:\\Users\\11035585\\.nuget\\packages\\rpaoaclibraryforwindows\\1.0.6\\lib\\net6.0-windows7.0\\RPAOACLibraryForWindows_Expressions_45407610.dll",
-        "C:\\Users\\11035585\\.nuget\\packages\\rpaoaclibraryforwindows\\1.0.6\\lib\\net6.0-windows7.0\\RPAOACLibraryForWindows_Expressions_48077747.dll",
-        "C:\\Users\\11035585\\.nuget\\packages\\rpaoaclibraryforwindows\\1.0.6\\lib\\net6.0-windows7.0\\RPAOACLibraryForWindows_Expressions_57865663.dll",
-        "C:\\Users\\11035585\\.nuget\\packages\\rpaoaclibraryforwindows\\1.0.6\\lib\\net6.0-windows7.0\\RPAOACLibraryForWindows_Expressions_63658373.dll",
-        "C:\\Users\\11035585\\.nuget\\packages\\rpaoaclibraryforwindows\\1.0.6\\lib\\net6.0-windows7.0\\RPAOACLibraryForWindows_Expressions_67051234.dll"
+        "C:\\Users\\11035585\\.nuget\\packages\\rpaoaclibraryforwindows\\1.0.9\\lib\\net6.0-windows7.0\\RPAOACLibraryForWindows.dll",
+        "C:\\Users\\11035585\\.nuget\\packages\\rpaoaclibraryforwindows\\1.0.9\\lib\\net6.0-windows7.0\\RPAOACLibraryForWindows_Expressions_10282806.dll",
+        "C:\\Users\\11035585\\.nuget\\packages\\rpaoaclibraryforwindows\\1.0.9\\lib\\net6.0-windows7.0\\RPAOACLibraryForWindows_Expressions_10849636.dll",
+        "C:\\Users\\11035585\\.nuget\\packages\\rpaoaclibraryforwindows\\1.0.9\\lib\\net6.0-windows7.0\\RPAOACLibraryForWindows_Expressions_15586314.dll",
+        "C:\\Users\\11035585\\.nuget\\packages\\rpaoaclibraryforwindows\\1.0.9\\lib\\net6.0-windows7.0\\RPAOACLibraryForWindows_Expressions_19284071.dll",
+        "C:\\Users\\11035585\\.nuget\\packages\\rpaoaclibraryforwindows\\1.0.9\\lib\\net6.0-windows7.0\\RPAOACLibraryForWindows_Expressions_20393304.dll",
+        "C:\\Users\\11035585\\.nuget\\packages\\rpaoaclibraryforwindows\\1.0.9\\lib\\net6.0-windows7.0\\RPAOACLibraryForWindows_Expressions_41325099.dll",
+        "C:\\Users\\11035585\\.nuget\\packages\\rpaoaclibraryforwindows\\1.0.9\\lib\\net6.0-windows7.0\\RPAOACLibraryForWindows_Expressions_48388231.dll",
+        "C:\\Users\\11035585\\.nuget\\packages\\rpaoaclibraryforwindows\\1.0.9\\lib\\net6.0-windows7.0\\RPAOACLibraryForWindows_Expressions_50424817.dll",
+        "C:\\Users\\11035585\\.nuget\\packages\\rpaoaclibraryforwindows\\1.0.9\\lib\\net6.0-windows7.0\\RPAOACLibraryForWindows_Expressions_52302524.dll",
+        "C:\\Users\\11035585\\.nuget\\packages\\rpaoaclibraryforwindows\\1.0.9\\lib\\net6.0-windows7.0\\RPAOACLibraryForWindows_Expressions_5323804.dll",
+        "C:\\Users\\11035585\\.nuget\\packages\\rpaoaclibraryforwindows\\1.0.9\\lib\\net6.0-windows7.0\\RPAOACLibraryForWindows_Expressions_61687102.dll",
+        "C:\\Users\\11035585\\.nuget\\packages\\rpaoaclibraryforwindows\\1.0.9\\lib\\net6.0-windows7.0\\RPAOACLibraryForWindows_Expressions_6554751.dll"
       ],
-      "Path": "C:\\Users\\11035585\\.nuget\\packages\\rpaoaclibraryforwindows\\1.0.6"
+      "Path": "C:\\Users\\11035585\\.nuget\\packages\\rpaoaclibraryforwindows\\1.0.9"
     },
     {
       "Package": {
@@ -7264,11 +7264,11 @@
         "C:\\Users\\11035585\\.nuget\\packages\\uipath.uiautomation.activities\\22.4.7\\lib\\net5.0-windows7.0\\UiPath.CV.Activities.dll",
         "C:\\Users\\11035585\\.nuget\\packages\\uipath.uiautomation.activities\\22.4.7\\lib\\net5.0-windows7.0\\UiPath.CV.dll",
         "C:\\Users\\11035585\\.nuget\\packages\\uipath.uiautomation.activities\\22.4.7\\lib\\net5.0-windows7.0\\UiPath.UIAutomation.Activities.Design.dll",
-        "C:\\Users\\11035585\\.nuget\\packages\\uipath.uiautomation.activities\\22.4.7\\lib\\net5.0-windows7.0\\UiPath.UiAutomation.Activities.dll",
         "C:\\Users\\11035585\\.nuget\\packages\\uipath.uiautomation.activities\\22.4.7\\lib\\net5.0-windows7.0\\UiPath.UIAutomationCore.dll",
         "C:\\Users\\11035585\\.nuget\\packages\\uipath.uiautomation.activities\\22.4.7\\lib\\net5.0-windows7.0\\UiPath.UIAutomationNext.Activities.Design.dll",
         "C:\\Users\\11035585\\.nuget\\packages\\uipath.uiautomation.activities\\22.4.7\\lib\\net5.0-windows7.0\\UiPath.UIAutomationNext.Activities.dll",
         "C:\\Users\\11035585\\.nuget\\packages\\uipath.uiautomation.activities\\22.4.7\\lib\\net5.0-windows7.0\\UiPath.UIAutomationNext.dll",
+        "C:\\Users\\11035585\\.nuget\\packages\\uipath.uiautomation.activities\\22.4.7\\lib\\net5.0-windows7.0\\UiPath.UiAutomation.Activities.dll",
         "C:\\Users\\11035585\\.nuget\\packages\\uipath.uiautomation.activities\\22.4.7\\lib\\net5.0-windows7.0\\UiPath.Wizards.dll"
       ],
       "Path": "C:\\Users\\11035585\\.nuget\\packages\\uipath.uiautomation.activities\\22.4.7"
