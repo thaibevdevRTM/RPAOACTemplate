@@ -1752,7 +1752,7 @@
           }
         }
       },
-      "RPAOACLibraryForWindows/1.0.32": {
+      "RPAOACLibraryForWindows/1.0.33": {
         "type": "package",
         "dependencies": {
           "UiPath.Database.Activities": "1.7.1",
@@ -1766,21 +1766,21 @@
         },
         "runtime": {
           "lib/net6.0-windows7.0/RPAOACLibraryForWindows.dll": {},
-          "lib/net6.0-windows7.0/RPAOACLibraryForWindows_Expressions_1393159.dll": {},
-          "lib/net6.0-windows7.0/RPAOACLibraryForWindows_Expressions_15964975.dll": {},
-          "lib/net6.0-windows7.0/RPAOACLibraryForWindows_Expressions_18454457.dll": {},
-          "lib/net6.0-windows7.0/RPAOACLibraryForWindows_Expressions_26371515.dll": {},
-          "lib/net6.0-windows7.0/RPAOACLibraryForWindows_Expressions_41431544.dll": {},
-          "lib/net6.0-windows7.0/RPAOACLibraryForWindows_Expressions_41849630.dll": {},
-          "lib/net6.0-windows7.0/RPAOACLibraryForWindows_Expressions_43005818.dll": {},
-          "lib/net6.0-windows7.0/RPAOACLibraryForWindows_Expressions_45669448.dll": {},
-          "lib/net6.0-windows7.0/RPAOACLibraryForWindows_Expressions_4723815.dll": {},
-          "lib/net6.0-windows7.0/RPAOACLibraryForWindows_Expressions_49012555.dll": {},
-          "lib/net6.0-windows7.0/RPAOACLibraryForWindows_Expressions_49907883.dll": {},
-          "lib/net6.0-windows7.0/RPAOACLibraryForWindows_Expressions_53904948.dll": {},
-          "lib/net6.0-windows7.0/RPAOACLibraryForWindows_Expressions_56699737.dll": {},
-          "lib/net6.0-windows7.0/RPAOACLibraryForWindows_Expressions_66454027.dll": {},
-          "lib/net6.0-windows7.0/RPAOACLibraryForWindows_Expressions_6676446.dll": {}
+          "lib/net6.0-windows7.0/RPAOACLibraryForWindows_Expressions_21391341.dll": {},
+          "lib/net6.0-windows7.0/RPAOACLibraryForWindows_Expressions_23431800.dll": {},
+          "lib/net6.0-windows7.0/RPAOACLibraryForWindows_Expressions_2443138.dll": {},
+          "lib/net6.0-windows7.0/RPAOACLibraryForWindows_Expressions_24670047.dll": {},
+          "lib/net6.0-windows7.0/RPAOACLibraryForWindows_Expressions_28037571.dll": {},
+          "lib/net6.0-windows7.0/RPAOACLibraryForWindows_Expressions_29229669.dll": {},
+          "lib/net6.0-windows7.0/RPAOACLibraryForWindows_Expressions_29640309.dll": {},
+          "lib/net6.0-windows7.0/RPAOACLibraryForWindows_Expressions_29865987.dll": {},
+          "lib/net6.0-windows7.0/RPAOACLibraryForWindows_Expressions_32836002.dll": {},
+          "lib/net6.0-windows7.0/RPAOACLibraryForWindows_Expressions_36068534.dll": {},
+          "lib/net6.0-windows7.0/RPAOACLibraryForWindows_Expressions_43809888.dll": {},
+          "lib/net6.0-windows7.0/RPAOACLibraryForWindows_Expressions_53337218.dll": {},
+          "lib/net6.0-windows7.0/RPAOACLibraryForWindows_Expressions_59995630.dll": {},
+          "lib/net6.0-windows7.0/RPAOACLibraryForWindows_Expressions_60513740.dll": {},
+          "lib/net6.0-windows7.0/RPAOACLibraryForWindows_Expressions_66070359.dll": {}
         },
         "contentFiles": {
           "contentFiles/any/any/_._": {
@@ -7264,7 +7264,7 @@
           }
         }
       },
-      "RPAOACLibraryForWindows/1.0.32": {
+      "RPAOACLibraryForWindows/1.0.33": {
         "type": "package",
         "dependencies": {
           "UiPath.Database.Activities": "1.7.1",
@@ -7278,21 +7278,21 @@
         },
         "runtime": {
           "lib/net6.0-windows7.0/RPAOACLibraryForWindows.dll": {},
-          "lib/net6.0-windows7.0/RPAOACLibraryForWindows_Expressions_1393159.dll": {},
-          "lib/net6.0-windows7.0/RPAOACLibraryForWindows_Expressions_15964975.dll": {},
-          "lib/net6.0-windows7.0/RPAOACLibraryForWindows_Expressions_18454457.dll": {},
-          "lib/net6.0-windows7.0/RPAOACLibraryForWindows_Expressions_26371515.dll": {},
-          "lib/net6.0-windows7.0/RPAOACLibraryForWindows_Expressions_41431544.dll": {},
-          "lib/net6.0-windows7.0/RPAOACLibraryForWindows_Expressions_41849630.dll": {},
-          "lib/net6.0-windows7.0/RPAOACLibraryForWindows_Expressions_43005818.dll": {},
-          "lib/net6.0-windows7.0/RPAOACLibraryForWindows_Expressions_45669448.dll": {},
-          "lib/net6.0-windows7.0/RPAOACLibraryForWindows_Expressions_4723815.dll": {},
-          "lib/net6.0-windows7.0/RPAOACLibraryForWindows_Expressions_49012555.dll": {},
-          "lib/net6.0-windows7.0/RPAOACLibraryForWindows_Expressions_49907883.dll": {},
-          "lib/net6.0-windows7.0/RPAOACLibraryForWindows_Expressions_53904948.dll": {},
-          "lib/net6.0-windows7.0/RPAOACLibraryForWindows_Expressions_56699737.dll": {},
-          "lib/net6.0-windows7.0/RPAOACLibraryForWindows_Expressions_66454027.dll": {},
-          "lib/net6.0-windows7.0/RPAOACLibraryForWindows_Expressions_6676446.dll": {}
+          "lib/net6.0-windows7.0/RPAOACLibraryForWindows_Expressions_21391341.dll": {},
+          "lib/net6.0-windows7.0/RPAOACLibraryForWindows_Expressions_23431800.dll": {},
+          "lib/net6.0-windows7.0/RPAOACLibraryForWindows_Expressions_2443138.dll": {},
+          "lib/net6.0-windows7.0/RPAOACLibraryForWindows_Expressions_24670047.dll": {},
+          "lib/net6.0-windows7.0/RPAOACLibraryForWindows_Expressions_28037571.dll": {},
+          "lib/net6.0-windows7.0/RPAOACLibraryForWindows_Expressions_29229669.dll": {},
+          "lib/net6.0-windows7.0/RPAOACLibraryForWindows_Expressions_29640309.dll": {},
+          "lib/net6.0-windows7.0/RPAOACLibraryForWindows_Expressions_29865987.dll": {},
+          "lib/net6.0-windows7.0/RPAOACLibraryForWindows_Expressions_32836002.dll": {},
+          "lib/net6.0-windows7.0/RPAOACLibraryForWindows_Expressions_36068534.dll": {},
+          "lib/net6.0-windows7.0/RPAOACLibraryForWindows_Expressions_43809888.dll": {},
+          "lib/net6.0-windows7.0/RPAOACLibraryForWindows_Expressions_53337218.dll": {},
+          "lib/net6.0-windows7.0/RPAOACLibraryForWindows_Expressions_59995630.dll": {},
+          "lib/net6.0-windows7.0/RPAOACLibraryForWindows_Expressions_60513740.dll": {},
+          "lib/net6.0-windows7.0/RPAOACLibraryForWindows_Expressions_66070359.dll": {}
         },
         "contentFiles": {
           "contentFiles/any/any/_._": {
@@ -13745,10 +13745,10 @@
         "portable.bouncycastle.nuspec"
       ]
     },
-    "RPAOACLibraryForWindows/1.0.32": {
-      "sha512": "KD97ppb2H0MXvm48tLtcFWNh8R/VmllV8PcHJQUKfdZjvGkivDdknMC7BT03CL3b9v5/x0j2X3e0ACLNCgNK8A==",
+    "RPAOACLibraryForWindows/1.0.33": {
+      "sha512": "HFx7CaVNpuJFtLZnQ6C1LfiyZhbdnHwWA18gCZu67v7xCj4EXDTMtJAFhDApBMUuMIPKOUw53gmI2HdTk6TEjg==",
       "type": "package",
-      "path": "rpaoaclibraryforwindows/1.0.32",
+      "path": "rpaoaclibraryforwindows/1.0.33",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -13787,22 +13787,22 @@
         "contentFiles/any/any/.objects/.metadata",
         "contentFiles/any/any/.objects/.type",
         "lib/net6.0-windows7.0/RPAOACLibraryForWindows.dll",
-        "lib/net6.0-windows7.0/RPAOACLibraryForWindows_Expressions_1393159.dll",
-        "lib/net6.0-windows7.0/RPAOACLibraryForWindows_Expressions_15964975.dll",
-        "lib/net6.0-windows7.0/RPAOACLibraryForWindows_Expressions_18454457.dll",
-        "lib/net6.0-windows7.0/RPAOACLibraryForWindows_Expressions_26371515.dll",
-        "lib/net6.0-windows7.0/RPAOACLibraryForWindows_Expressions_41431544.dll",
-        "lib/net6.0-windows7.0/RPAOACLibraryForWindows_Expressions_41849630.dll",
-        "lib/net6.0-windows7.0/RPAOACLibraryForWindows_Expressions_43005818.dll",
-        "lib/net6.0-windows7.0/RPAOACLibraryForWindows_Expressions_45669448.dll",
-        "lib/net6.0-windows7.0/RPAOACLibraryForWindows_Expressions_4723815.dll",
-        "lib/net6.0-windows7.0/RPAOACLibraryForWindows_Expressions_49012555.dll",
-        "lib/net6.0-windows7.0/RPAOACLibraryForWindows_Expressions_49907883.dll",
-        "lib/net6.0-windows7.0/RPAOACLibraryForWindows_Expressions_53904948.dll",
-        "lib/net6.0-windows7.0/RPAOACLibraryForWindows_Expressions_56699737.dll",
-        "lib/net6.0-windows7.0/RPAOACLibraryForWindows_Expressions_66454027.dll",
-        "lib/net6.0-windows7.0/RPAOACLibraryForWindows_Expressions_6676446.dll",
-        "rpaoaclibraryforwindows.1.0.32.nupkg.sha512",
+        "lib/net6.0-windows7.0/RPAOACLibraryForWindows_Expressions_21391341.dll",
+        "lib/net6.0-windows7.0/RPAOACLibraryForWindows_Expressions_23431800.dll",
+        "lib/net6.0-windows7.0/RPAOACLibraryForWindows_Expressions_2443138.dll",
+        "lib/net6.0-windows7.0/RPAOACLibraryForWindows_Expressions_24670047.dll",
+        "lib/net6.0-windows7.0/RPAOACLibraryForWindows_Expressions_28037571.dll",
+        "lib/net6.0-windows7.0/RPAOACLibraryForWindows_Expressions_29229669.dll",
+        "lib/net6.0-windows7.0/RPAOACLibraryForWindows_Expressions_29640309.dll",
+        "lib/net6.0-windows7.0/RPAOACLibraryForWindows_Expressions_29865987.dll",
+        "lib/net6.0-windows7.0/RPAOACLibraryForWindows_Expressions_32836002.dll",
+        "lib/net6.0-windows7.0/RPAOACLibraryForWindows_Expressions_36068534.dll",
+        "lib/net6.0-windows7.0/RPAOACLibraryForWindows_Expressions_43809888.dll",
+        "lib/net6.0-windows7.0/RPAOACLibraryForWindows_Expressions_53337218.dll",
+        "lib/net6.0-windows7.0/RPAOACLibraryForWindows_Expressions_59995630.dll",
+        "lib/net6.0-windows7.0/RPAOACLibraryForWindows_Expressions_60513740.dll",
+        "lib/net6.0-windows7.0/RPAOACLibraryForWindows_Expressions_66070359.dll",
+        "rpaoaclibraryforwindows.1.0.33.nupkg.sha512",
         "rpaoaclibraryforwindows.nuspec"
       ]
     },
@@ -22066,7 +22066,7 @@
   "projectFileDependencyGroups": {
     "": [],
     "net6.0-windows7.0": [
-      "RPAOACLibraryForWindows >= 1.0.32 <= 1.0.32",
+      "RPAOACLibraryForWindows >= 1.0.33 <= 1.0.33",
       "UiPath.Excel.Activities >= 2.20.2 <= 2.20.2",
       "UiPath.System.Activities >= 23.4.3 <= 23.4.3",
       "UiPath.Testing.Activities >= 22.4.3 <= 22.4.3",
@@ -22074,15 +22074,15 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\11035585\\.nuget\\packages\\": {}
+    "C:\\Users\\AMD\\.nuget\\packages\\": {}
   },
   "project": {
     "restore": {
       "projectUniqueName": "RPAOACTemplate_Windows",
       "projectName": "RPAOACTemplate_Windows",
-      "projectPath": "D:\\Thaibev\\RPAOACTemplate\\.local",
-      "packagesPath": "C:\\Users\\11035585\\.nuget\\packages\\",
-      "outputPath": "D:\\Thaibev\\RPAOACTemplate\\.local"
+      "projectPath": "C:\\Users\\AMD\\Documents\\GitHub\\RPA_OAC_Template_ChangeLIB\\RPAOACTemplate\\.local",
+      "packagesPath": "C:\\Users\\AMD\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\AMD\\Documents\\GitHub\\RPA_OAC_Template_ChangeLIB\\RPAOACTemplate\\.local"
     },
     "frameworks": {
       "net6.0-windows7.0": {
@@ -22090,7 +22090,7 @@
           "RPAOACLibraryForWindows": {
             "include": "Runtime",
             "target": "Package",
-            "version": "[1.0.32, 1.0.32]"
+            "version": "[1.0.33, 1.0.33]"
           },
           "UiPath.Excel.Activities": {
             "include": "Runtime",
@@ -22113,7 +22113,7 @@
             "version": "[23.4.7, 23.4.7]"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Users\\11035585\\AppData\\Local\\Programs\\UiPath\\Studio\\runtime.json"
+        "runtimeIdentifierGraphPath": "C:\\Users\\AMD\\AppData\\Local\\Programs\\UiPath\\Studio\\runtime.json"
       }
     },
     "runtimes": {
