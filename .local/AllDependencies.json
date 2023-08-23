@@ -22074,15 +22074,15 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\AMD\\.nuget\\packages\\": {}
+    "C:\\Users\\11035585\\.nuget\\packages\\": {}
   },
   "project": {
     "restore": {
       "projectUniqueName": "RPAOACTemplate_Windows",
       "projectName": "RPAOACTemplate_Windows",
-      "projectPath": "C:\\Users\\AMD\\Documents\\GitHub\\RPA_OAC_Template_ChangeLIB\\RPAOACTemplate\\.local",
-      "packagesPath": "C:\\Users\\AMD\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\AMD\\Documents\\GitHub\\RPA_OAC_Template_ChangeLIB\\RPAOACTemplate\\.local"
+      "projectPath": "D:\\Thaibev\\RPAOACTemplate\\.local",
+      "packagesPath": "C:\\Users\\11035585\\.nuget\\packages\\",
+      "outputPath": "D:\\Thaibev\\RPAOACTemplate\\.local"
     },
     "frameworks": {
       "net6.0-windows7.0": {
@@ -22113,7 +22113,7 @@
             "version": "[23.4.7, 23.4.7]"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Users\\AMD\\AppData\\Local\\Programs\\UiPath\\Studio\\runtime.json"
+        "runtimeIdentifierGraphPath": "C:\\Users\\11035585\\AppData\\Local\\Programs\\UiPath\\Studio\\runtime.json"
       }
     },
     "runtimes": {

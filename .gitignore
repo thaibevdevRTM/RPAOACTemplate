@@ -1,0 +1,4 @@
+
+.local/*
+.local/db/references.db
+.local/nuget.cache
