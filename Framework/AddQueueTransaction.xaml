@@ -3,7 +3,7 @@
     <x:Property Name="in_Config" Type="InArgument(scg:Dictionary(x:String, x:Object))" />
   </x:Members>
   <sap2010:ExpressionActivityEditor.ExpressionActivityEditor>C#</sap2010:ExpressionActivityEditor.ExpressionActivityEditor>
-  <sap:VirtualizedContainerService.HintSize>1410.4,701.6</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1095.2,701.6</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="54">
@@ -120,7 +120,10 @@
     </Flowchart.StartNode>
     <FlowDecision x:Name="__ReferenceID2" DisplayName="Flow Decision" sap:VirtualizedContainerService.HintSize="79.2,87.2" sap2010:WorkflowViewState.IdRef="FlowDecision_2">
       <FlowDecision.Condition>
-        <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_46">listMail.Count() &gt; 0</CSharpValue>
+        <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_46">
+          <CSharpValue.Result>
+            <OutArgument x:TypeArguments="x:Boolean" />
+          </CSharpValue.Result>listMail.Count() &gt; 0</CSharpValue>
       </FlowDecision.Condition>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -145,7 +148,7 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:ForEach x:TypeArguments="snm:MailMessage" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="547.2,385.6" sap2010:WorkflowViewState.IdRef="ForEach`1_1">
+            <ui:ForEach x:TypeArguments="snm:MailMessage" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="547.2,385.6" sap2010:WorkflowViewState.IdRef="ForEach`1_1" MaxIterations="{x:Null}">
               <ui:ForEach.Body>
                 <ActivityAction x:TypeArguments="snm:MailMessage">
                   <ActivityAction.Argument>
@@ -170,43 +173,64 @@
                             <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
                               <ui:AssignOperation.To>
                                 <OutArgument x:TypeArguments="x:Object">
-                                  <CSharpReference x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpReference`1_2">in_Config["PathProcess"]</CSharpReference>
+                                  <CSharpReference x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpReference`1_2">
+                                    <CSharpReference.Result>
+                                      <OutArgument x:TypeArguments="Location(x:Object)" />
+                                    </CSharpReference.Result>in_Config["PathProcess"]</CSharpReference>
                                 </OutArgument>
                               </ui:AssignOperation.To>
                               <ui:AssignOperation.Value>
                                 <InArgument x:TypeArguments="x:Object">
-                                  <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_10">string.Format(in_Config["PathProcess"].ToString(),in_Config["ProcessName"].ToString(),DateTime.Now.ToString("yyyyMMddHHmmss") )</CSharpValue>
+                                  <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_10">
+                                    <CSharpValue.Result>
+                                      <OutArgument x:TypeArguments="x:Object" />
+                                    </CSharpValue.Result>string.Format(in_Config["PathProcess"].ToString(),in_Config["ProcessName"].ToString(),DateTime.Now.ToString("yyyyMMddHHmmss") )</CSharpValue>
                                 </InArgument>
                               </ui:AssignOperation.Value>
                             </ui:AssignOperation>
                           </scg:List>
                         </ui:MultipleAssign.AssignOperations>
                       </ui:MultipleAssign>
-                      <ui:CreateDirectory ContinueOnError="{x:Null}" Output="{x:Null}" DisplayName="Create Folder" sap:VirtualizedContainerService.HintSize="430.4,90.4" sap2010:WorkflowViewState.IdRef="CreateDirectory_1">
+                      <ui:CreateDirectory ContinueOnError="{x:Null}" DisplayName="Create Folder" sap:VirtualizedContainerService.HintSize="430.4,90.4" sap2010:WorkflowViewState.IdRef="CreateDirectory_1" Output="{x:Null}">
                         <ui:CreateDirectory.Path>
                           <InArgument x:TypeArguments="x:String">
-                            <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_11">in_Config["PathProcess"].ToString()</CSharpValue>
+                            <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_11">
+                              <CSharpValue.Result>
+                                <OutArgument x:TypeArguments="x:String" />
+                              </CSharpValue.Result>in_Config["PathProcess"].ToString()</CSharpValue>
                           </InArgument>
                         </ui:CreateDirectory.Path>
                       </ui:CreateDirectory>
                     </Sequence>
-                    <ui:AddQueueItem ServiceBaseAddress="{x:Null}" TimeoutMS="{x:Null}" DisplayName="Add Queue Item" sap:VirtualizedContainerService.HintSize="449.6,24.8" sap2010:WorkflowViewState.IdRef="AddQueueItem_5" Priority="Normal">
+                    <ui:AddQueueItem ContinueOnError="{x:Null}" DeferDate="{x:Null}" DisplayName="Add Queue Item" DueDate="{x:Null}" sap:VirtualizedContainerService.HintSize="449.6,24.8" sap2010:WorkflowViewState.IdRef="AddQueueItem_5" ItemInformationCollection="{x:Null}" Priority="Normal" Reference="{x:Null}" ServiceBaseAddress="{x:Null}" TimeoutMS="{x:Null}">
                       <ui:AddQueueItem.FolderPath>
                         <InArgument x:TypeArguments="x:String">
-                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_45">in_Config["OrchestratorFolderName"].ToString()</CSharpValue>
+                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_45">
+                            <CSharpValue.Result>
+                              <OutArgument x:TypeArguments="x:String" />
+                            </CSharpValue.Result>in_Config["OrchestratorFolderName"].ToString()</CSharpValue>
                         </InArgument>
                       </ui:AddQueueItem.FolderPath>
                       <ui:AddQueueItem.ItemInformation>
                         <InArgument x:TypeArguments="x:String" x:Key="process">
-                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_42">in_Config["ProcessName"].ToString()</CSharpValue>
+                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_42">
+                            <CSharpValue.Result>
+                              <OutArgument x:TypeArguments="x:String" />
+                            </CSharpValue.Result>in_Config["ProcessName"].ToString()</CSharpValue>
                         </InArgument>
                         <InArgument x:TypeArguments="x:String" x:Key="date">
-                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_43">DateTime.Now.ToString("dd/MM/yyyy HH:mm")</CSharpValue>
+                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_43">
+                            <CSharpValue.Result>
+                              <OutArgument x:TypeArguments="x:String" />
+                            </CSharpValue.Result>DateTime.Now.ToString("dd/MM/yyyy HH:mm")</CSharpValue>
                         </InArgument>
                       </ui:AddQueueItem.ItemInformation>
                       <ui:AddQueueItem.QueueType>
                         <InArgument x:TypeArguments="x:String">
-                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_44">in_Config["OrchestratorQueueName"].ToString()</CSharpValue>
+                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_44">
+                            <CSharpValue.Result>
+                              <OutArgument x:TypeArguments="x:String" />
+                            </CSharpValue.Result>in_Config["OrchestratorQueueName"].ToString()</CSharpValue>
                         </InArgument>
                       </ui:AddQueueItem.QueueType>
                     </ui:AddQueueItem>
@@ -215,7 +239,10 @@
               </ui:ForEach.Body>
               <ui:ForEach.Values>
                 <InArgument x:TypeArguments="sc:IEnumerable">
-                  <CSharpValue x:TypeArguments="sc:IEnumerable" sap2010:WorkflowViewState.IdRef="CSharpValue`1_16">listMail</CSharpValue>
+                  <CSharpValue x:TypeArguments="sc:IEnumerable" sap2010:WorkflowViewState.IdRef="CSharpValue`1_16">
+                    <CSharpValue.Result>
+                      <OutArgument x:TypeArguments="sc:IEnumerable" />
+                    </CSharpValue.Result>listMail</CSharpValue>
                 </InArgument>
               </ui:ForEach.Values>
             </ui:ForEach>
@@ -236,7 +263,7 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="229.6,62.4" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="exits read email" />
+            <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="229.6,62.4" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="exits read email" TextWriter="{x:Null}" />
           </Sequence>
         </FlowStep>
       </FlowDecision.False>
@@ -245,7 +272,7 @@
     <x:Reference>__ReferenceID1</x:Reference>
     <FlowDecision x:Name="__ReferenceID5" DisplayName="Flow Decision" sap:VirtualizedContainerService.HintSize="79.2,87.2" sap2010:WorkflowViewState.IdRef="FlowDecision_3">
       <FlowDecision.Condition>
-        <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_31">(Boolean)in_Config["IsAddQueueWithEmail"]</CSharpValue>
+        <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_47">Boolean.Parse(in_Config["IsAddQueueWithEmail"].ToString())</CSharpValue>
       </FlowDecision.Condition>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -265,7 +292,7 @@
               <av:PointCollection x:Key="ConnectorLocation">110.64166666666699,193.12 110.64166666666699,223.12 140.441666666667,223.12 140.441666666667,351.2</av:PointCollection>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <r:sqReadEmail rtnAccountMail="{x:Null}" rtnFilterExpression="{x:Null}" sap:VirtualizedContainerService.HintSize="200,52.8" sap2010:WorkflowViewState.IdRef="sqReadEmail_1" rtnGetTop="10" rtnMailFolder="inbox">
+          <r:sqReadEmail sap:VirtualizedContainerService.HintSize="200,52.8" sap2010:WorkflowViewState.IdRef="sqReadEmail_1" rtnAccountMail="{x:Null}" rtnFilterExpression="{x:Null}" rtnGetTop="10" rtnMailFolder="inbox">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -273,7 +300,10 @@
             </sap:WorkflowViewStateService.ViewState>
             <r:sqReadEmail.rtnMailLists>
               <OutArgument x:TypeArguments="umm:Office365Message[]">
-                <CSharpReference x:TypeArguments="umm:Office365Message[]" sap2010:WorkflowViewState.IdRef="CSharpReference`1_5">listMail</CSharpReference>
+                <CSharpReference x:TypeArguments="umm:Office365Message[]" sap2010:WorkflowViewState.IdRef="CSharpReference`1_5">
+                  <CSharpReference.Result>
+                    <OutArgument x:TypeArguments="Location(umm:Office365Message[])" />
+                  </CSharpReference.Result>listMail</CSharpReference>
               </OutArgument>
             </r:sqReadEmail.rtnMailLists>
           </r:sqReadEmail>
@@ -309,12 +339,18 @@
                     <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_2">
                       <ui:AssignOperation.To>
                         <OutArgument x:TypeArguments="x:Object">
-                          <CSharpReference x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpReference`1_4">in_Config["PathProcess"]</CSharpReference>
+                          <CSharpReference x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpReference`1_4">
+                            <CSharpReference.Result>
+                              <OutArgument x:TypeArguments="Location(x:Object)" />
+                            </CSharpReference.Result>in_Config["PathProcess"]</CSharpReference>
                         </OutArgument>
                       </ui:AssignOperation.To>
                       <ui:AssignOperation.Value>
                         <InArgument x:TypeArguments="x:Object">
-                          <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_36">string.Format(in_Config["PathProcess"].ToString(),in_Config["ProcessName"].ToString(),DateTime.Now.ToString("yyyyMMddHHmmss") )</CSharpValue>
+                          <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_36">
+                            <CSharpValue.Result>
+                              <OutArgument x:TypeArguments="x:Object" />
+                            </CSharpValue.Result>string.Format(in_Config["PathProcess"].ToString(),in_Config["ProcessName"].ToString(),DateTime.Now.ToString("yyyyMMddHHmmss") )</CSharpValue>
                         </InArgument>
                       </ui:AssignOperation.Value>
                     </ui:AssignOperation>
@@ -346,23 +382,35 @@
                 </sap:WorkflowViewStateService.ViewState>
               </ui:CommentOut>
             </Sequence>
-            <ui:AddQueueItem ServiceBaseAddress="{x:Null}" TimeoutMS="{x:Null}" DisplayName="Add Queue Item" sap:VirtualizedContainerService.HintSize="492.8,32" sap2010:WorkflowViewState.IdRef="AddQueueItem_4" Priority="Normal">
+            <ui:AddQueueItem ContinueOnError="{x:Null}" DeferDate="{x:Null}" DisplayName="Add Queue Item" DueDate="{x:Null}" sap:VirtualizedContainerService.HintSize="492.8,32" sap2010:WorkflowViewState.IdRef="AddQueueItem_4" ItemInformationCollection="{x:Null}" Priority="Normal" Reference="{x:Null}" ServiceBaseAddress="{x:Null}" TimeoutMS="{x:Null}">
               <ui:AddQueueItem.FolderPath>
                 <InArgument x:TypeArguments="x:String">
-                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_40">in_Config["OrchestratorFolderName"].ToString()</CSharpValue>
+                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_40">
+                    <CSharpValue.Result>
+                      <OutArgument x:TypeArguments="x:String" />
+                    </CSharpValue.Result>in_Config["OrchestratorFolderName"].ToString()</CSharpValue>
                 </InArgument>
               </ui:AddQueueItem.FolderPath>
               <ui:AddQueueItem.ItemInformation>
                 <InArgument x:TypeArguments="x:String" x:Key="process">
-                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_38">in_Config["ProcessName"].ToString()</CSharpValue>
+                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_38">
+                    <CSharpValue.Result>
+                      <OutArgument x:TypeArguments="x:String" />
+                    </CSharpValue.Result>in_Config["ProcessName"].ToString()</CSharpValue>
                 </InArgument>
                 <InArgument x:TypeArguments="x:String" x:Key="date">
-                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_34">DateTime.Now.ToString("dd/MM/yyyy HH:mm")</CSharpValue>
+                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_34">
+                    <CSharpValue.Result>
+                      <OutArgument x:TypeArguments="x:String" />
+                    </CSharpValue.Result>DateTime.Now.ToString("dd/MM/yyyy HH:mm")</CSharpValue>
                 </InArgument>
               </ui:AddQueueItem.ItemInformation>
               <ui:AddQueueItem.QueueType>
                 <InArgument x:TypeArguments="x:String">
-                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_39">in_Config["OrchestratorQueueName"].ToString()</CSharpValue>
+                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_39">
+                    <CSharpValue.Result>
+                      <OutArgument x:TypeArguments="x:String" />
+                    </CSharpValue.Result>in_Config["OrchestratorQueueName"].ToString()</CSharpValue>
                 </InArgument>
               </ui:AddQueueItem.QueueType>
             </ui:AddQueueItem>
