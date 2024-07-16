@@ -3,7 +3,7 @@
     <x:Property Name="in_Config" Type="InArgument(scg:Dictionary(x:String, x:Object))" />
   </x:Members>
   <sap2010:ExpressionActivityEditor.ExpressionActivityEditor>C#</sap2010:ExpressionActivityEditor.ExpressionActivityEditor>
-  <sap:VirtualizedContainerService.HintSize>1095.2,701.6</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>818.4,701.6</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="54">
@@ -103,7 +103,7 @@
       <AssemblyReference>WindowsBase</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Flowchart sap:VirtualizedContainerService.HintSize="633.6,636.8" sap2010:WorkflowViewState.IdRef="Flowchart_1">
+  <Flowchart sap:VirtualizedContainerService.HintSize="633.5999999999999,636.7999999999998" sap2010:WorkflowViewState.IdRef="Flowchart_1">
     <Flowchart.Variables>
       <Variable x:TypeArguments="umm:Office365Message[]" Name="listMail" />
     </Flowchart.Variables>
@@ -118,7 +118,7 @@
     <Flowchart.StartNode>
       <x:Reference>__ReferenceID5</x:Reference>
     </Flowchart.StartNode>
-    <FlowDecision x:Name="__ReferenceID2" DisplayName="Flow Decision" sap:VirtualizedContainerService.HintSize="79.2,87.2" sap2010:WorkflowViewState.IdRef="FlowDecision_2">
+    <FlowDecision x:Name="__ReferenceID2" DisplayName="Flow Decision" sap:VirtualizedContainerService.HintSize="78.4,87.2" sap2010:WorkflowViewState.IdRef="FlowDecision_2">
       <FlowDecision.Condition>
         <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_46">
           <CSharpValue.Result>
@@ -129,7 +129,7 @@
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           <av:Point x:Key="ShapeLocation">120.641666666667,351.2</av:Point>
-          <av:Size x:Key="ShapeSize">79.2,87.2</av:Size>
+          <av:Size x:Key="ShapeSize">78.4,87.2</av:Size>
           <av:PointCollection x:Key="FalseConnector">199.841666666667,394.8 379.841666666667,394.8 379.841666666667,470.84</av:PointCollection>
           <av:PointCollection x:Key="TrueConnector">120.641666666667,394.8 100,394.8 100,445.6 130,445.6 130,475.6</av:PointCollection>
         </scg:Dictionary>
@@ -142,32 +142,32 @@
               <av:Size x:Key="ShapeSize">200,83.2</av:Size>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <Sequence DisplayName="manage email " sap:VirtualizedContainerService.HintSize="200,83.2" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="manage email " sap:VirtualizedContainerService.HintSize="624.8,958.4" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:ForEach x:TypeArguments="snm:MailMessage" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="547.2,385.6" sap2010:WorkflowViewState.IdRef="ForEach`1_1" MaxIterations="{x:Null}">
+            <ui:ForEach x:TypeArguments="snm:MailMessage" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="562.4,846.4" sap2010:WorkflowViewState.IdRef="ForEach`1_1">
               <ui:ForEach.Body>
                 <ActivityAction x:TypeArguments="snm:MailMessage">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="snm:MailMessage" Name="item" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="512,260" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="528.8,658.4" sap2010:WorkflowViewState.IdRef="Sequence_4">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <Sequence DisplayName="perpare folder" sap:VirtualizedContainerService.HintSize="449.6,83.2" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                    <Sequence DisplayName="perpare folder" sap:VirtualizedContainerService.HintSize="485.6,334.4" sap2010:WorkflowViewState.IdRef="Sequence_3">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="430.4,111.2" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+                      <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="423.2,101.6" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
                         <ui:MultipleAssign.AssignOperations>
                           <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
                             <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
@@ -191,7 +191,7 @@
                           </scg:List>
                         </ui:MultipleAssign.AssignOperations>
                       </ui:MultipleAssign>
-                      <ui:CreateDirectory ContinueOnError="{x:Null}" DisplayName="Create Folder" sap:VirtualizedContainerService.HintSize="430.4,90.4" sap2010:WorkflowViewState.IdRef="CreateDirectory_1" Output="{x:Null}">
+                      <ui:CreateDirectory ContinueOnError="{x:Null}" Output="{x:Null}" DisplayName="Create Folder" sap:VirtualizedContainerService.HintSize="423.2,80.8" sap2010:WorkflowViewState.IdRef="CreateDirectory_1">
                         <ui:CreateDirectory.Path>
                           <InArgument x:TypeArguments="x:String">
                             <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_11">
@@ -202,7 +202,7 @@
                         </ui:CreateDirectory.Path>
                       </ui:CreateDirectory>
                     </Sequence>
-                    <ui:AddQueueItem ContinueOnError="{x:Null}" DeferDate="{x:Null}" DisplayName="Add Queue Item" DueDate="{x:Null}" sap:VirtualizedContainerService.HintSize="449.6,24.8" sap2010:WorkflowViewState.IdRef="AddQueueItem_5" ItemInformationCollection="{x:Null}" Priority="Normal" Reference="{x:Null}" ServiceBaseAddress="{x:Null}" TimeoutMS="{x:Null}">
+                    <ui:AddQueueItem ServiceBaseAddress="{x:Null}" TimeoutMS="{x:Null}" DisplayName="Add Queue Item" sap:VirtualizedContainerService.HintSize="485.6,194.4" sap2010:WorkflowViewState.IdRef="AddQueueItem_5" Priority="Normal">
                       <ui:AddQueueItem.FolderPath>
                         <InArgument x:TypeArguments="x:String">
                           <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_45">
@@ -263,14 +263,14 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="229.6,62.4" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="exits read email" TextWriter="{x:Null}" />
+            <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="229.6,62.4" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="exits read email" />
           </Sequence>
         </FlowStep>
       </FlowDecision.False>
     </FlowDecision>
     <x:Reference>__ReferenceID0</x:Reference>
     <x:Reference>__ReferenceID1</x:Reference>
-    <FlowDecision x:Name="__ReferenceID5" DisplayName="Flow Decision" sap:VirtualizedContainerService.HintSize="79.2,87.2" sap2010:WorkflowViewState.IdRef="FlowDecision_3">
+    <FlowDecision x:Name="__ReferenceID5" DisplayName="Flow Decision" sap:VirtualizedContainerService.HintSize="78.4,87.2" sap2010:WorkflowViewState.IdRef="FlowDecision_3">
       <FlowDecision.Condition>
         <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_47">Boolean.Parse(in_Config["IsAddQueueWithEmail"].ToString())</CSharpValue>
       </FlowDecision.Condition>
@@ -278,26 +278,36 @@
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           <av:Point x:Key="ShapeLocation">260.641666666667,127.7</av:Point>
-          <av:Size x:Key="ShapeSize">79.2,87.2</av:Size>
+          <av:Size x:Key="ShapeSize">78.4,87.2</av:Size>
           <av:PointCollection x:Key="FalseConnector">339.841666666667,171.3 480,171.3 480,245.6</av:PointCollection>
-          <av:PointCollection x:Key="TrueConnector">260.641666666667,171.3 230.64166666666694,171.3 230.64166666666694,166.72 210.641666666667,166.72</av:PointCollection>
+          <av:PointCollection x:Key="TrueConnector">260.641666666667,171.3 230.641666666667,171.3 230.641666666667,180 210,180</av:PointCollection>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <FlowDecision.True>
         <FlowStep x:Name="__ReferenceID4">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <av:Point x:Key="ShapeLocation">10.641666666666993,140.32</av:Point>
+              <av:Point x:Key="ShapeLocation">10,153.6</av:Point>
               <av:Size x:Key="ShapeSize">200,52.8</av:Size>
-              <av:PointCollection x:Key="ConnectorLocation">110.64166666666699,193.12 110.64166666666699,223.12 140.441666666667,223.12 140.441666666667,351.2</av:PointCollection>
+              <av:PointCollection x:Key="ConnectorLocation">110,206.39999999999998 110,236.39999999999998 140.24166666666702,236.39999999999998 140.24166666666702,351.2</av:PointCollection>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <r:sqReadEmail sap:VirtualizedContainerService.HintSize="200,52.8" sap2010:WorkflowViewState.IdRef="sqReadEmail_1" rtnAccountMail="{x:Null}" rtnFilterExpression="{x:Null}" rtnGetTop="10" rtnMailFolder="inbox">
+          <r:sqReadEmail sap:VirtualizedContainerService.HintSize="200,52.8" sap2010:WorkflowViewState.IdRef="sqReadEmail_1" rtnAccountMail="OAC" rtnGetTop="1">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
+            <r:sqReadEmail.rtnFilterExpression>
+              <InArgument x:TypeArguments="x:String">
+                <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_49">in_Config["MailExpression"].ToString()</CSharpValue>
+              </InArgument>
+            </r:sqReadEmail.rtnFilterExpression>
+            <r:sqReadEmail.rtnMailFolder>
+              <InArgument x:TypeArguments="x:String">
+                <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_48">in_Config["MailFolderInbox"].ToString()</CSharpValue>
+              </InArgument>
+            </r:sqReadEmail.rtnMailFolder>
             <r:sqReadEmail.rtnMailLists>
               <OutArgument x:TypeArguments="umm:Office365Message[]">
                 <CSharpReference x:TypeArguments="umm:Office365Message[]" sap2010:WorkflowViewState.IdRef="CSharpReference`1_5">
@@ -326,14 +336,14 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <Sequence DisplayName="perpare folder" sap:VirtualizedContainerService.HintSize="492.8,336.8" sap2010:WorkflowViewState.IdRef="Sequence_10">
+            <Sequence DisplayName="perpare folder" sap:VirtualizedContainerService.HintSize="485.6,306.4" sap2010:WorkflowViewState.IdRef="Sequence_10">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="430.4,111.2" sap2010:WorkflowViewState.IdRef="MultipleAssign_2">
+              <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="423.2,101.6" sap2010:WorkflowViewState.IdRef="MultipleAssign_2">
                 <ui:MultipleAssign.AssignOperations>
                   <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
                     <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_2">
@@ -357,7 +367,7 @@
                   </scg:List>
                 </ui:MultipleAssign.AssignOperations>
               </ui:MultipleAssign>
-              <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="430.4,62.4" sap2010:WorkflowViewState.IdRef="CommentOut_3">
+              <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="423.2,52.8" sap2010:WorkflowViewState.IdRef="CommentOut_3">
                 <ui:CommentOut.Body>
                   <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="400,213.6" sap2010:WorkflowViewState.IdRef="Sequence_11">
                     <sap:WorkflowViewStateService.ViewState>
@@ -382,7 +392,7 @@
                 </sap:WorkflowViewStateService.ViewState>
               </ui:CommentOut>
             </Sequence>
-            <ui:AddQueueItem ContinueOnError="{x:Null}" DeferDate="{x:Null}" DisplayName="Add Queue Item" DueDate="{x:Null}" sap:VirtualizedContainerService.HintSize="492.8,32" sap2010:WorkflowViewState.IdRef="AddQueueItem_4" ItemInformationCollection="{x:Null}" Priority="Normal" Reference="{x:Null}" ServiceBaseAddress="{x:Null}" TimeoutMS="{x:Null}">
+            <ui:AddQueueItem ServiceBaseAddress="{x:Null}" TimeoutMS="{x:Null}" DisplayName="Add Queue Item" sap:VirtualizedContainerService.HintSize="485.6,194.4" sap2010:WorkflowViewState.IdRef="AddQueueItem_4" Priority="Normal">
               <ui:AddQueueItem.FolderPath>
                 <InArgument x:TypeArguments="x:String">
                   <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_40">
